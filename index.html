@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Memory Challenge!</h1>
+    
+    <p>
+      Welcome to the Memory Challenge game! Press the buttons to repeat the pattern. Get all 8 right and you win!
+    </p>
+    
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">
+      Stop
+    </button>
+
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone(1)"></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone(2)"></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone(3)"></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone(4)"></button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone(5)"></button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone(6)"></button>
+    </div>
+        
+    <img id="img1" 
+         src="https://cdn.glitch.com/b4b156a8-9d6d-4f6a-94d4-212f726b441c%2Fthumbnails%2Fleaf.png?1616575707914" 
+         width="150" 
+         height="150" 
+         class="hidden"
+         onmouseup="imgClick(1)">
+    <img id="img2" 
+         src="https://cdn.glitch.com/b4b156a8-9d6d-4f6a-94d4-212f726b441c%2Fthumbnails%2Fwater.png?1616575228530" 
+         width="150" 
+         height="150" 
+         class="hidden"
+         onmouseup="imgClick(2)">
+    <img id="img3" 
+         src="https://cdn.glitch.com/b4b156a8-9d6d-4f6a-94d4-212f726b441c%2Fthumbnails%2Fstrawberry.png?1616575483303" 
+         width="150" 
+         height="150" 
+         class="hidden" 
+         onmouseup="imgClick(3)">
+    <img id="img4" 
+         src="https://cdn.glitch.com/b4b156a8-9d6d-4f6a-94d4-212f726b441c%2Fthumbnails%2Fduck.png?1616575159209" 
+         width="150" 
+         height="150" 
+         class="hidden"
+         onmouseup="imgClick(4)">
+    <img id="img5" 
+         src="https://cdn.glitch.com/b4b156a8-9d6d-4f6a-94d4-212f726b441c%2Fthumbnails%2Fcone.png?1616575311383" 
+         width="150" 
+         height="150" 
+         class="hidden" 
+         onmouseup="imgClick(5)">
+    <img id="img6" 
+         src="https://cdn.glitch.com/b4b156a8-9d6d-4f6a-94d4-212f726b441c%2Fthumbnails%2Fgrapes.png?1616574947943" 
+         width="150" 
+         height="150" 
+         class="hidden" 
+         onmouseup="imgClick(6)">
+    
+    <p id="timer"></p>
+    
+  </body>
+</html>
