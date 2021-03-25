@@ -1,0 +1,113 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: rgb(212,220,255);
+  color: midnightblue; 
+}
+
+h1 {
+  font-family: verdana, arial, sans-serif; 
+  font-style: italic;
+  color: darkblue;
+}
+
+button {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+#gameButtonArea > button {
+  width:200px;
+  height:200px;
+  margin:15px;
+}
+
+.hidden {
+  display: none;
+}
+
+#button1 {
+    background: lightgreen;
+}
+
+#button2 {
+    background: lightblue;
+}
+
+#button3 {
+    background: pink;
+}
+
+#button4 {
+    background: lightyellow;
+}
+
+#button5 {
+    background: peachpuff;
+}
+
+#button6 {
+    background: plum;
+}
+
+#button1:active, #button1.lit {
+    background: green;
+}
+
+#button2:active, #button2.lit {
+    background: blue;
+}
+
+#button3:active, #button3.lit {
+    background: red;
+}
+
+#button4:active, #button4.lit {
+    background: yellow;
+}
+
+#button5:active, #button5.lit {
+    background: darkorange;
+}
+
+#button6:active, #button6.lit {
+    background: purple;
+}
+
+#img1 {
+    position:absolute; 
+    top:200px; 
+    left:80px;
+}
+
+#img2 {
+    position:absolute; 
+    top:200px; 
+    left:305px;
+}
+
+#img3 {
+    position:absolute; 
+    top:200px; 
+    left:545px;
+}
+
+#img4 {
+    position:absolute; 
+    top:200px; 
+    left:775px;
+}
+
+#img5 {
+    position:absolute; 
+    top:200px; 
+    left:1010px;
+}
+
+#img6 {
+    position:absolute; 
+    top:200px; 
+    left:1255px;
+}
